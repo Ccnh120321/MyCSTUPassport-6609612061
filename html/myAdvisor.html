@@ -3,7 +3,17 @@
     <title>MyAdvisor</title>
     <style>
         body {background-color: rgb(228, 255, 254);}
-        h1{text-align: center;}
+        header 
+        {
+        background-color: #666;
+        padding: 1px;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: white;
+        text-indent: 10px;
+        }
+        #h1{text-align: center;}
         h2{text-align: center;}
         #img
         {
@@ -18,18 +28,21 @@
         {
         width: 192px;
         height: 108px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        }
+        footer 
+        {
+        text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>My Advisor</h1>
+    <header><h1>My Advisor</h1></header>
     <img id="img" src="../Picture/myAdvisor.webp">
-    <h1>ผศ.ดร.วิลาวรรณ รักผกาวงศ์</h1>
+    <h1 id="h1">ผศ.ดร.วิลาวรรณ รักผกาวงศ์</h1>
     <h2>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h2>
-    <h1>ติดต่อ</h1>
+    <h1 id="h1">ติดต่อ</h1>
     <h2>wilawan@cs.tu.ac.th</h2>
-    <a href="../index.html"><img id="img2" src="../Picture/myhomepage.png"></a>
+    <footer>
+        <a href="../index.html"><img id="img2" src="../Picture/myhomepage.png"></a>
+    </footer>
 </body>
