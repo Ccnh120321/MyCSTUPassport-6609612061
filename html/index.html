@@ -2,43 +2,45 @@
 <head>
     <title>Homepage</title>
     <style>
-        body {background-color: rgb(255, 195, 155);}
-        header 
+        body
         {
-        background-color: #666;
-        padding: 1px;
-        width: 100%;
-        text-align: left;
-        text-transform: uppercase;
-        font-size: 10px;
-        color: white;
-        text-indent: 10px;
+        background: url("Picture/background.jpg");
+        background-size:1860px 945px;
+        background-repeat:no-repeat;
         }
         video
         {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgb(255, 70, 70);
+        margin-left: 50px;
+        background-color: rgb(255, 139, 139);
         }
+        #text1 
+        {text-align: center;}
         #img1
         {
         width : 427.84px; 
         height: 570.56px;
         padding: 15px;
-        background-color: rgb(255, 70, 70);
+        background-color: rgb(255, 139, 139);
         box-shadow: 10px 10px rgb(87, 87, 87);
         }
-        #button
+        #img2
         {
-        margin-top: 25px;
-        margin-left: 20px;
+        width: 192px;
+        height: 108px;
+        margin-left: 25px;
+        margin-top: 10px;
         }
         #tab1
         {margin-left: 15px;}
+        a:link 
+        {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        }
         a:visited   
         {
-        color: rgb(0, 0, 0);
+        color: pink;
         background-color: transparent;
         text-decoration: none;
         }
@@ -48,50 +50,49 @@
         background-color: transparent;
         text-decoration: underline;
         }
-        #center
+        a:active 
         {
-        text-align: center;
-        }
-        #left
-        {
-        text-align: left;
-        }
-        #right
-        {
-        text-align: right;
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header><h1>Homepage</h1></header>
     <table>
         <tbody>
+            <tr>
+                <td><h1><em>It's me.</em></h1></tr></td>    
+            <tr>
                 <td>
-                    <a href="https://www.facebook.com/natthapong.kanthamoon" target="_blank"><img id="img1" src="image/mypic.jpg" alt="นี่ฉันเอง"></a>    
+                    <a href="https://www.facebook.com/natthapong.kanthamoon" target="_blank"><img id="img1" src="Picture/mypic.jpg" alt="นี่ฉันเอง"></a>    
                 </td>
                 <td colspan="3">
                     <table>
                         <tbody>
                             <tr>
-                                <td id="center">
+                                <td>
                                     <h2 id="tab1"><strong>ชื่อ</strong></h2>
                                     <h2 id="tab1"><strong>Name</strong></h2>
                                     <h2 id="tab1"><strong>ชื่อเล่น</strong></h2>
                                 </td>
-                                <td id="left">
-                                    <h2><small>นัทธพงค์ คันทมูล</small></h2>
-                                    <h2><small>Natthapong Kantamoon</small></h2>
-                                    <h2><small>แคมป์(CAMP)</small></h2>
+                                <td>
+                                    <h2 id="text1"><small>นัทธพงค์ คันทมูล</small></h2>
+                                    <h2 id="text1"><small>Natthapong Kantamoon</small></h2>
+                                    <h2 id="text1"><small>แคมป์(CAMP)</small></h2>
                                 </td>
                             </tr>        
                             <tr>
-                                <td colspan="2">
+                                <td colspan="4">
                                     <h2 id="tab1"><strong>อายุ 19 ปี กรุ๊ปเลือด O เกิดวันที่ 11 เดือน มิถุนายน พ.ศ.2547</strong></h2>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2" id="left">
-                                    <h2 id="tab1"><u>ข้อมูลอื่นๆ</u></h2>
+                                <td>
+                                    
+                                </td>
+                                <td colspan="2">
+                                    <h2><u>ข้อมูลอื่นๆ</u></h2>
                                     <ol>
                                         <li>พักอยู่ที่หอพัก TU dome</li>
                                         <li>ชอบสีแดง-ขาว</li>
@@ -99,17 +100,15 @@
                                         <li>ชอบวิชาคณิตศาสตร์</li>
                                     </ol>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="left">
+                                <td>
                                     <div>
-                                        <h2 id="tab1"><u>ติดต่อได้ที่</u></h2>
+                                        <h2><u>ติดต่อได้ที่</u></h2>
                                         <ul>
                                             <li>โทร 095-272-4038</li>
                                             <li>natthapong.kan@dome.tu.ac.th</li>
                                             <li>campnatthapong@gmail.com</li>
                                             <li>LINE ID : camp551230</li>
-                                            <li>IG : <a href="https://www.instagram.com/ntp_ktm/" target="_blank">ntp_ktm</a></li>
+                                            <li>IG : <a href="https://www.instagram.com/ntp_ktm/">ntp_ktm</a></li>
                                         </ul>
                                     </div>
                                 </td>
@@ -117,13 +116,15 @@
                         </tbody>
                     </table>
                 </td>
+                <td>
+                    <video src="Video/Myvideo.mp4" width="432px" height="611.4px" controls></video>
+                </td>
             </tr>
         </tbody>
     </table>
-    <video src="VDO/Myvideo.mp4" width="432px" height="611.4px" controls></video>
-    <div id="center">
-        <a href="html/myAdvisor.html" class="button"><img id="button" src="image/myAdvisorpage.png" width="192px" height="108px"></a>
-        <a href="html/myActivities.html" class="button"><img id="button" src="image/myActivitiespage.png" width="192px" height="108px"></a>
+    <div>
+        <a href="html/myAdvisor.html" target="_blank"><img id="img2" src="Picture/myAdvisorpage.png"></a> 
+        <a href="html/myActivities.html" target="_blank"><img id="img2" src="Picture/myActivitiespage.png"></a>
     </div>
 </body>
 </html>
