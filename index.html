@@ -1,129 +1,77 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {background-color: rgb(255, 195, 155);}
-        header 
-        {
-        background-color: #666;
-        padding: 1px;
-        width: 100%;
-        text-align: left;
-        text-transform: uppercase;
-        font-size: 10px;
-        color: white;
-        text-indent: 10px;
+        body{
+            background-color: rgb(255, 171, 171);
         }
-        video
-        {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgb(255, 70, 70);
+        img{
+            width: 100%;
+            height: auto;
+            box-shadow: 10px 10px rgb(75, 75, 75);
         }
-        #img1
-        {
-        width : 427.84px; 
-        height: 570.56px;
-        padding: 15px;
-        background-color: rgb(255, 70, 70);
-        box-shadow: 10px 10px rgb(87, 87, 87);
-        }
-        #button
-        {
-        margin-top: 25px;
-        margin-left: 20px;
-        }
-        #tab1
-        {margin-left: 15px;}
-        a:visited   
-        {
-        color: rgb(0, 0, 0);
-        background-color: transparent;
-        text-decoration: none;
-        }
-        a:hover 
-        {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-        }
-        #center
-        {
-        text-align: center;
-        }
-        #left
-        {
-        text-align: left;
-        }
-        #right
-        {
-        text-align: right;
+        video{
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <header><h1>Homepage</h1></header>
-    <table>
-        <tbody>
-                <td>
-                    <a href="https://www.facebook.com/natthapong.kanthamoon" target="_blank"><img id="img1" src="image/mypic.jpg" alt="นี่ฉันเอง"></a>    
-                </td>
-                <td colspan="3">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td id="center">
-                                    <h2 id="tab1"><strong>ชื่อ</strong></h2>
-                                    <h2 id="tab1"><strong>Name</strong></h2>
-                                    <h2 id="tab1"><strong>ชื่อเล่น</strong></h2>
-                                </td>
-                                <td id="left">
-                                    <h2><small>นัทธพงค์ คันทมูล</small></h2>
-                                    <h2><small>Natthapong Kantamoon</small></h2>
-                                    <h2><small>แคมป์(CAMP)</small></h2>
-                                </td>
-                            </tr>        
-                            <tr>
-                                <td colspan="2">
-                                    <h2 id="tab1"><strong>อายุ 19 ปี กรุ๊ปเลือด O เกิดวันที่ 11 เดือน มิถุนายน พ.ศ.2547</strong></h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="left">
-                                    <h2 id="tab1"><u>ข้อมูลอื่นๆ</u></h2>
-                                    <ol>
-                                        <li>พักอยู่ที่หอพัก TU dome</li>
-                                        <li>ชอบสีแดง-ขาว</li>
-                                        <li>เวลาว่างจะฟังเพลง</li>
-                                        <li>ชอบวิชาคณิตศาสตร์</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="left">
-                                    <div>
-                                        <h2 id="tab1"><u>ติดต่อได้ที่</u></h2>
-                                        <ul>
-                                            <li>โทร 095-272-4038</li>
-                                            <li>natthapong.kan@dome.tu.ac.th</li>
-                                            <li>campnatthapong@gmail.com</li>
-                                            <li>LINE ID : camp551230</li>
-                                            <li>IG : <a href="https://www.instagram.com/ntp_ktm/" target="_blank">ntp_ktm</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <video src="VDO/Myvideo.mp4" width="432px" height="611.4px" controls></video>
-    <div id="center">
-        <a href="html/myAdvisor.html" class="button"><img id="button" src="image/myAdvisorpage.png" width="192px" height="108px"></a>
-        <a href="html/myActivities.html" class="button"><img id="button" src="image/myActivitiespage.png" width="192px" height="108px"></a>
-    </div>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="#">HOMEPAGE</a>
+                    <ul>
+                        <li><a href="html/myAdvisor.html">MY ADVIROR</a></li>
+                        <li><a href="html/myActivities.html">MY ACTIVITIES</a>
+<!--                            <ul>
+                                <li><a href="#"></a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <img src="image/mypic.jpg">
+        </div>
+        <div class="col-6 col-s-9">
+          <ul id="rcorners">
+            <li>ชื่อ นาย นัทธพพงค์ คันทมูล</li>
+            <li>Name Natthpong Kantamoon</li>
+            <li>ชื่อเล่น แคมป์ (CAMP)</li>
+            <li>อายุ 19 ปี กรุ๊ปเลือด O เกิดวันที่ 11 เดือน มิถุนายน พ.ศ.2547</li>
+            <li>ข้อมูลอื่นๆ
+                <ol>
+                    <li>พักอยู่ที่หอพัก TU dome</li>
+                    <li>ชอบสีแดง-ขาว</li>
+                    <li>เวลาว่างจะฟังเพลง</li>
+                    <li>ชอบวิชาคณิตศาสตร์</li>
+                </ol>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="col-3 col-s-12">
+          <div class="aside">
+            <video src="VDO/Myvideo.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+        <div class="footer">
+            <h1>CONTACT</h1>
+            <ul>
+                <li>โทร 095-272-4038</li>
+                <li>FB : Natthapong Kanthamoon</li>
+                <li>IG : ntp_ktm</li>
+                <li>natthapong.kan@dome.tu.ac.th</li>
+                <li>campnatthapong@gmail.com</li>
+                <li>LINE ID : camp551230</li>
+            </ul>
+        </div>
 </body>
 </html>
