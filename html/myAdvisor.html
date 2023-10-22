@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyAdvisor</title>
     <style>
-        body {background-color: rgb(228, 255, 254);}
-        header 
-        {
-        background-color: #666;
-        padding: 1px;
-        text-align: left;
-        width: 100%;
-        text-transform: uppercase;
-        font-size: 10px;
-        color: white;
-        text-indent: 10px;
-        }
-        #h1{text-align: center;}
-        h2{text-align: center;}
-        #img
-        {
-        width : 266px; 
-        height: 360px;
-        box-shadow: 10px 10px rgb(75, 75, 75);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-        #img2
-        {
-        width: 192px;
-        height: 108px;
-        }
-        footer 
-        {
-        text-align: center;
+        #list{
+            text-decoration: none;
+            color: black;
         }
     </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header><h1>My Advisor</h1></header>
-    <img id="img" src="../image/myAdvisor.webp">
-    <h1 id="h1">ผศ.ดร.วิลาวรรณ รักผกาวงศ์</h1>
-    <h2>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h2>
-    <h1 id="h1">ติดต่อ</h1>
-    <h2>wilawan@cs.tu.ac.th</h2>
-    <footer>
-        <a href="../index.html"><img id="img2" src="../image/myhomepage.png"></a>
-    </footer>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="#">MY ADVISOR</a>
+                    <ul>
+                        <li><a href="../index.html">HOME PAGE</a></li>
+                        <li><a href="myActivities.html">MY ACTIVITIES</a>
+<!--                            <ul>
+                                <li><a href="#"></a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <img id="img" src="../image/myAdvisor.webp">
+        </div>
+        <div class="col-9 col-s-12">
+          <ul id="rcorners">
+            <li>Asst.Prof. Dr. Wilawan Rukpakavong</li>
+            <li>ผศ.ดร.วิลาวรรณ รักผกาวงศ์</li>
+            <li><strong>CONTACT</strong>
+                <ul>
+                    <li>อาคาร LC-2 ชั้น 2 ห้อง 210</li>
+                    <li>0-2986-9156 ต่อ 215</li>
+                    <li>wilawan@cs.tu.ac.th</li>
+                </ul>
+            </li>
+            <li><strong>ALL PUBLICATIONS</strong>
+                <ul>
+                    <li><a id="list" href="https://www.semanticscholar.org/author/Wilawan-Rukpakavong/1767714" target="_blank">Google Scholar Profile</a></li>
+                    <li><a id="list" href="https://www.researchgate.net/profile/Wilawan-Rukpakavong" target="_blank">ResearchGate Profile</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 </body>
+</html>

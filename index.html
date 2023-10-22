@@ -4,17 +4,13 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body{
-            background-color: rgb(255, 171, 171);
-        }
-        img{
-            width: 100%;
-            height: auto;
-            box-shadow: 10px 10px rgb(75, 75, 75);
-        }
         video{
             width: 100%;
             height: auto;
+        }
+        #list{
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -22,7 +18,7 @@
     <header>
         <div class="nav">
             <ul>
-                <li><a href="#">HOMEPAGE</a>
+                <li><a href="#">HOME PAGE</a>
                     <ul>
                         <li><a href="html/myAdvisor.html">MY ADVIROR</a></li>
                         <li><a href="html/myActivities.html">MY ACTIVITIES</a>
@@ -37,7 +33,7 @@
     </header>
     <div class="row">
         <div class="col-3 col-s-3 menu">
-            <img src="image/mypic.jpg">
+            <img id="img" src="image/mypic.jpg">
         </div>
         <div class="col-6 col-s-9">
           <ul id="rcorners">
@@ -61,12 +57,12 @@
             <video src="VDO/Myvideo.mp4" controls></video>
           </div>
         </div>
-      </div>
+    </div>
         <div class="footer">
             <h1>CONTACT</h1>
             <ul>
                 <li>โทร 095-272-4038</li>
-                <li>FB : Natthapong Kanthamoon</li>
+                <li><a id="list" href="https://www.facebook.com/natthapong.kanthamoon" target="_blank">FB : Natthapong Kanthamoon</a></li>
                 <li>IG : ntp_ktm</li>
                 <li>natthapong.kan@dome.tu.ac.th</li>
                 <li>campnatthapong@gmail.com</li>
